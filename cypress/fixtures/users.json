@@ -1,0 +1,44 @@
+{
+  "validUser": {
+    "name": "João Silva",
+    "email": "joao.silva@exemplo.com",
+    "password": "Senha@123",
+    "confirmPassword": "Senha@123"
+  },
+  "invalidEmailUser": {
+    "name": "João Silva",
+    "email": "email_invalido",
+    "password": "Senha@123",
+    "confirmPassword": "Senha@123"
+  },
+  "mismatchedPasswordUser": {
+    "name": "João Silva",
+    "email": "joao.silva@exemplo.com",
+    "password": "Senha@123",
+    "confirmPassword": "Senha_Diferente"
+  },
+  "longNameUser": {
+    "name": "João Silva Com Um Nome Muito Longo Para Testar Limites de Caracteres no Campo de Nome",
+    "email": "joao.silva@exemplo.com",
+    "password": "Senha@123",
+    "confirmPassword": "Senha@123"
+  },
+    "longPasswordUser": {
+    "name": "João Silva",
+    "email": "joao.silva@exemplo.com",
+    "password": "João Silva Com Um Nome Muito Longo Para Testar Limites de Caracteres no Campo de Nome",
+    "confirmPassword": "João Silva Com Um Nome Muito Longo Para Testar Limites de Caracteres no Campo de Nome"
+  },
+  "longNamePasswordUser": {
+    "name": "João Silva Com Um Nome Muito Longo Para Testar Limites de Caracteres no Campo de Nome",
+    "email": "joao.silva@exemplo.com",
+    "password": "João Silva Com Um Nome Muito Longo Para Testar Limites de Caracteres no Campo de Nome",
+    "confirmPassword": "João Silva Com Um Nome Muito Longo Para Testar Limites de Caracteres no Campo de Nome"
+  },  
+  "specialCharsNameUser": {
+    "name": "João@#$%Silva",
+    "email": "joao.silva@exemplo.com",
+    "password": "Senha@123",
+    "confirmPassword": "Senha@123"
+  }
+}
