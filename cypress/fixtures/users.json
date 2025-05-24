@@ -40,5 +40,11 @@
     "email": "joao.silva@exemplo.com",
     "password": "Senha@123",
     "confirmPassword": "Senha@123"
+  },
+    "inValidUser": {
+    "name": "J",
+    "email": "joao.silva@exemplo.com",
+    "password": "S",
+    "confirmPassword": "S"
   }
 }

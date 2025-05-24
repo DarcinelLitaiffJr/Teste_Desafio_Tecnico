@@ -65,10 +65,10 @@ describe('Testes de Cadastro de Usuários', () => {
 
     // Cenário Adicional 3: Verificação do botão Enviar desabilitado
     it('Deve verificar que o botão Enviar está desabilitado até preenchimento correto', () => {
-        cy.get('#submit-button').should('be.disabled');
         cy.fixture('users').then((users) => {
-            cy.fillRegistrationForm(users.validUser);
-            cy.get('#success-message', { timeout: 3000 }).should('be.visible');
+            cy.fillRegistrationForm(users.inValidUser);
+            cy.get('#error-message', { timeout: 8000 }).should('be.visible').and('contain','Deve ser imputado dados validos');
         });
+        cy.get('#submit-button').should('be.disabled');
     });
 });

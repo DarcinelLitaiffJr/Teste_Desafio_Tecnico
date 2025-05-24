@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>Cadastro de Usuários</h1>
-    <form id="registration-form">
+    <form id="registration-form" novalidate>
       <div class="form-group">
         <label for="name">Nome</label>
         <input type="text" id="name" name="name" placeholder="Digite seu nome">
@@ -26,7 +26,7 @@
         <label for="confirm-password">Confirmação de Senha</label>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha">
       </div>
-      <button type="submit" id="submit-button" disabled>Enviar</button>
+      <button type="submit" id="submit-button" >Enviar</button>
     </form>
     <p id="success-message" class="success-message" style="display: none;"></p>
     <p id="error-message" class="error-message" style="display: none;"></p>

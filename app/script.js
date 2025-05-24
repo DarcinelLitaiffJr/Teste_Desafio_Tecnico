@@ -14,8 +14,14 @@ function validateRegistrationForm() {
   const confirmPassword = confirmPasswordInput.value;
 
   // Habilita o botão apenas se todos os campos estiverem preenchidos
-  submitButton.disabled = (name.length === 1 && confirmPassword.length === 1);
+ submitButton.disabled = (name.length === 1 && confirmPassword.length === 1);
 
+ if (submitButton.disabled) {
+    errorMessage.textContent = 'Deve ser imputado dados validos';
+    errorMessage.style.display = 'block';
+    return;
+  }
+  
   return { name, email, password, confirmPassword };
 }
 
